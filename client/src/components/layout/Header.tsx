@@ -54,14 +54,14 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
-                <a
-                  className={`text-gray-700 hover:text-primary transition-colors duration-200 font-medium relative group ${
+                <span
+                  className={`text-gray-700 hover:text-primary transition-colors duration-200 font-medium relative group cursor-pointer ${
                     location === item.href ? "text-primary" : ""
                   }`}
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </span>
               </Link>
             ))}
             <Link href="/wholeseller">
