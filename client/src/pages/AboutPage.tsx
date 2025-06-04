@@ -13,22 +13,22 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Jagat Singh",
+      name: "Priya Singh",
       position: "Founder & CEO",
       description: "Agricultural Science Graduate with 25+ years of industry experience.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      image: "/O1.png"
     },
     {
-      name: "Priya Sharma",
+      name: "Rahul Rajput",
       position: "Head of Operations",
       description: "MBA in Operations Management, expert in supply chain optimization.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332e234?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      image: "/O2.png"
     },
     {
       name: "Dr. Rajesh Kumar",
       position: "Chief Agronomist",
       description: "PhD in Soil Science, leading our research and development initiatives.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+      image: "/O3.png"
     }
   ];
 
