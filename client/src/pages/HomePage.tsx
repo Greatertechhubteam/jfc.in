@@ -88,7 +88,7 @@ const HomePage = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold"
+              className="border-2 border-white text-black hover:bg-primary/90 hover:text-white px-8 py-4 text-lg font-semibold"
             >
               <Phone className="mr-2 h-5 w-5" />
               Contact Us
@@ -282,9 +282,9 @@ const HomePage = () => {
                       "Jagat Fertilizer has transformed my farm's productivity. Their soil testing service and custom fertilizer recommendations increased my yield by 30%."
                     </p>
                     <div className="flex items-center">
-                      <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                      {/* <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div> */}
                       <div>
-                        <h4 className="font-semibold text-gray-900">Farmer {index + 1}</h4>
+                        <h4 className="font-semibold text-gray-900">Ram {index + 1}</h4>
                         <p className="text-gray-500 text-sm">Agricultural Customer</p>
                       </div>
                     </div>
@@ -319,11 +319,11 @@ const HomePage = () => {
                   Call Now: +91 98765 43210
                 </Button>
               </Link>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/7900400900" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4"
+                  className="border-2 border-white text-primary hover:bg-white hover:text-primary px-8 py-4"
                 >
                   WhatsApp Us
                 </Button>

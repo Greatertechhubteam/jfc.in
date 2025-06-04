@@ -42,35 +42,37 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <Leaf className="h-7 w-7 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Jagat Fertilizer</h3>
-                <p className="text-sm text-gray-400">& Chemical</p>
-              </div>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Leading provider of premium fertilizers and agricultural solutions. 
-              Trusted by farmers for over two decades with commitment to sustainable farming practices.
-            </p>
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
-                <Facebook className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
-                <Instagram className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-            </div>
+  <div className="space-y-6">
+        <Link href="/" className="flex items-center space-x-3 group">
+          <img
+            src="/logo.svg"
+            alt="Jagat Fertilizer Logo"
+            className="w-20 h-20 object-contain" // Adjusted to better fit in footer
+          />
+          <div>
+            {/* <h3 className="text-xl font-bold">Jagat Fertilizer</h3> */}
+            {/* <p className="text-sm text-gray-400">& Chemical</p> */}
           </div>
+        </Link>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Leading provider of premium fertilizers and agricultural solutions.
+          Trusted by farmers for over two decades with commitment to sustainable farming practices.
+        </p>
+        <div className="flex space-x-4">
+          <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
+            <Facebook className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
+            <Twitter className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
+            <Instagram className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" className="text-gray-400 hover:text-primary hover:bg-gray-800">
+            <Linkedin className="h-5 w-5" />
+          </Button>
+        </div>
+      </div>
 
           {/* Quick Links */}
           <div>
@@ -109,18 +111,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-gray-400 text-sm">
-                  <p>123 Agricultural Plaza</p>
-                  <p>Green Valley, Farming District</p>
-                  <p>State 123456</p>
+                  <p>Gata No\122, Mohamad Karimpur Urf Dhakar, Khurja Bulandshahar, Uttar Pradesh, 203131 India</p>
+                  {/* <p>Green Valley, Farming District</p>
+                  <p>State 123456</p> */}
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">+91 98765 43210</span>
+                <span className="text-gray-400 text-sm">+91 7900400900</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <span className="text-gray-400 text-sm">info@jagatfertilizer.com</span>
+                <span className="text-gray-400 text-sm">info.jagatfertilizer@gmail.com</span>
               </div>
             </div>
           </div>

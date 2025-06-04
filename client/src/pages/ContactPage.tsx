@@ -52,17 +52,17 @@ const ContactPage = () => {
     {
       icon: <MapPin />,
       title: "Our Address",
-      details: ["123 Agricultural Plaza", "Green Valley, Farming District", "State 123456"]
+      details: ["Gata No-122, Mohamad Karimpur ", "Urf Dhakar, Khurja Bulandshahar,", "Uttar Pradesh, 203131 India"]
     },
     {
       icon: <Phone />,
       title: "Phone Numbers",
-      details: ["Main: +91 98765 43210", "Sales: +91 98765 43211"]
+      details: ["Main: +91 7900400900"]
     },
     {
       icon: <Mail />,
       title: "Email Addresses",
-      details: ["info@jagatfertilizer.com", "sales@jagatfertilizer.com"]
+      details: ["info.jagatfertilizer@gmail.com", "sales@jagatfertilizer.com"]
     },
     {
       icon: <Clock />,
@@ -143,7 +143,7 @@ const ContactPage = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 123456789"
                         required
                         className="mt-2"
                       />
@@ -237,21 +237,21 @@ const ContactPage = () => {
                     >
                       <Button className="w-full bg-white text-primary hover:bg-gray-100">
                         <MessageSquare className="mr-2 h-4 w-4" />
-                        WhatsApp: +91 98765 43210
+                        WhatsApp: +91 7900400900
                       </Button>
                     </a>
                     
                     <a href="tel:+919876543210" className="block">
                       <Button className="w-full bg-green-600 text-white hover:bg-green-700">
                         <Phone className="mr-2 h-4 w-4" />
-                        Call Now: +91 98765 43210
+                        Call Now: +91 7900400900
                       </Button>
                     </a>
                     
-                    <a href="mailto:info@jagatfertilizer.com" className="block">
+                    <a href="mailto:info.jagatfertilizer@gmail.com" className="block">
                       <Button 
                         variant="outline" 
-                        className="w-full border-2 border-white text-white hover:bg-white hover:text-primary"
+                        className="w-full border-2 border-white text-primary hover:bg-white hover:text-primary"
                       >
                         <Mail className="mr-2 h-4 w-4" />
                         Email Us
@@ -294,6 +294,7 @@ const ContactPage = () => {
               <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
               <p className="text-gray-600 font-medium mb-2">Interactive Map</p>
               <p className="text-sm text-gray-500">Google Maps integration would be embedded here</p>
+              
               <Button className="mt-4 bg-primary hover:bg-primary/90 text-white">
                 Get Directions
               </Button>
@@ -367,7 +368,7 @@ const ContactPage = () => {
                   <p className="text-gray-600 mb-4">
                     Get instant support and quick responses through WhatsApp
                   </p>
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/7900400900" target="_blank" rel="noopener noreferrer">
                     <Button className="bg-green-500 hover:bg-green-600 text-white">
                       Chat Now
                     </Button>
