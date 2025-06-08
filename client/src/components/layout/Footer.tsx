@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   const services = [
-    "Soil Testing",
+    "",
     "Agro Consultancy",
     "Fast Delivery",
     "Technical Support",
@@ -111,7 +111,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-gray-400 text-sm">
-                  <p>Gata No\122, Mohamad Karimpur Urf Dhakar, Khurja Bulandshahar, Uttar Pradesh, 203131 India</p>
+                  <p>Gata No\122, Mohamad Karimpur Urf Dhakar, Uttar Pradesh, 203131 India</p>
                   {/* <p>Green Valley, Farming District</p>
                   <p>State 123456</p> */}
                 </div>
@@ -131,10 +131,10 @@ const Footer = () => {
         {/* Newsletter */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
               <p className="text-gray-400 text-sm">Subscribe to our newsletter for agricultural tips and product updates</p>
-            </div>
+            </div> */}
             <div className="flex w-full md:w-auto space-x-2">
               <Input 
                 type="email" 

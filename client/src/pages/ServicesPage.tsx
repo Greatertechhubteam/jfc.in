@@ -15,17 +15,7 @@ import {
 
 const ServicesPage = () => {
   const services = [
-    {
-      icon: <TestTube />,
-      title: "Soil Testing & Analysis",
-      description: "Professional soil testing services to determine nutrient levels, pH balance, and soil health. Get detailed reports with customized fertilizer recommendations.",
-      features: [
-        "Comprehensive nutrient analysis",
-        "pH and EC testing",
-        "Organic matter assessment",
-        "Customized recommendations"
-      ]
-    },
+ 
     {
       icon: <UserCheck />,
       title: "Agro Consultancy",
@@ -223,7 +213,7 @@ const ServicesPage = () => {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Coverage</h4>
-                  <p className="text-2xl font-bold text-primary">50+ Districts</p>
+                  <p className="text-2xl font-bold text-primary">20+ Districts</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Response Time</h4>
@@ -282,7 +272,7 @@ const ServicesPage = () => {
                 Schedule Consultation
               </Button>
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary">
-                Call: +91 98765 43210
+                Call: +91 7900400900
               </Button>
             </div>
           </motion.div>

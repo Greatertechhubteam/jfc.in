@@ -42,16 +42,16 @@ const HomePage = () => {
 
   const featuredProducts = [
     {
-      name: "NPK Complex Fertilizer",
+      name: "NPK Complex Fertilizers",
       description: "Balanced nutrition for optimal crop growth and development",
       price: "₹850/bag",
       image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-      category: "Fertilizers",
+      category: "Fertilizerss",
       tags: ["NPK", "Balanced", "High Quality"]
     },
     {
       name: "Organic Compost",
-      description: "Natural organic fertilizer for sustainable farming practices",
+      description: "Natural organic Fertilizers for sustainable farming practices",
       price: "₹650/bag",
       image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
       category: "Organic",
@@ -62,7 +62,7 @@ const HomePage = () => {
       description: "Effective pest and disease control solution",
       price: "₹450/L",
       image: "https://images.unsplash.com/photo-1560582861-45078880e48e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-      category: "Chemicals",
+      category: "& Chemicalss",
       tags: ["Pesticide", "Protection", "Effective"]
     }
   ];
@@ -73,7 +73,7 @@ const HomePage = () => {
       <HeroSection
         title="Premium Agricultural Solutions"
         subtitle="Growing Success Together"
-        description="Leading provider of high-quality fertilizers, chemicals, and comprehensive agricultural services. Empowering farmers with expert consultancy and innovative solutions for sustainable growth."
+        description="Leading provider of high-quality Fertilizers, & Chemicals, and comprehensive agricultural services. Empowering farmers with expert consultancy and innovative solutions for sustainable growth."
         backgroundImage="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380"
         height="xl"
       >
@@ -108,7 +108,7 @@ const HomePage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Jagat Fertilizer?
+              Why Choose Jagat Fertilizers & Chemicals?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Trusted by thousands of farmers across the region for quality products and expert agricultural guidance
@@ -140,20 +140,20 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                About Jagat Fertilizer & Chemical
+                About Jagat Fertilizers & Chemicals
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                With over two decades of experience in the agricultural industry, Jagat Fertilizer & Chemical has been 
+                With over 8+ Years of experience in the agricultural industry, Jagat Fertilizers & Chemicals has been 
                 a trusted partner for farmers seeking quality products and expert guidance.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We specialize in providing comprehensive agricultural solutions including premium fertilizers, 
-                crop protection chemicals, soil testing services, and professional agro consultancy.
+                We specialize in providing comprehensive agricultural solutions including premium Fertilizers, 
+                crop protection & Chemicals, soil testing services, and professional agro consultancy.
               </p>
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">8+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
@@ -161,11 +161,11 @@ const HomePage = () => {
                   <div className="text-gray-600">Happy Farmers</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">200+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">30+</div>
                   <div className="text-gray-600">Products</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
                   <div className="text-gray-600">Locations</div>
                 </div>
               </div>
@@ -279,7 +279,7 @@ const HomePage = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 mb-4 italic">
-                      "Jagat Fertilizer has transformed my farm's productivity. Their soil testing service and custom fertilizer recommendations increased my yield by 30%."
+                      "Jagat Fertilizerss has transformed my farm's productivity. Their soil testing service and custom Fertilizerss recommendations increased my yield by 30%."
                     </p>
                     <div className="flex items-center">
                       {/* <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div> */}
@@ -309,14 +309,14 @@ const HomePage = () => {
               Ready to Boost Your Crop Yield?
             </h2>
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-              Join thousands of satisfied farmers who trust Jagat Fertilizer for their agricultural needs. 
+              Join thousands of satisfied farmers who trust Jagat Fertilizers for their agricultural needs. 
               Get expert consultation and premium products today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100 px-8 py-4">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: +91 98765 43210
+                  Call Now: +91 7900400900
                 </Button>
               </Link>
               <a href="https://wa.me/7900400900" target="_blank" rel="noopener noreferrer">

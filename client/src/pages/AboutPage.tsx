@@ -5,30 +5,30 @@ import { Target, Eye, Users, Award, Briefcase, GraduationCap } from "lucide-reac
 
 const AboutPage = () => {
   const stats = [
-    { number: "20+", label: "Years Experience" },
+    { number: "8+", label: "Years Experience" },
     { number: "5000+", label: "Happy Farmers" },
-    { number: "200+", label: "Products" },
-    { number: "50+", label: "Locations" }
+    { number: "30+", label: "Products" },
+    { number: "20+", label: "Locations" }
   ];
 
   const team = [
     {
-      name: "Priya Singh",
-      position: "Founder & CEO",
+      name: "Megha Rawal",
+      position: "CEO",
       description: "Agricultural Science Graduate with 25+ years of industry experience.",
       image: "/O1.png"
     },
     {
-      name: "Rahul Rajput",
-      position: "Head of Operations",
+      name: "Rahul Gour",
+      position: "Founder & Director",
       description: "MBA in Operations Management, expert in supply chain optimization.",
-      image: "/O2.png"
+      image: "/Founder.png"
     },
     {
-      name: "Dr. Rajesh Kumar",
-      position: "Chief Agronomist",
+      name: "Gaurav Kumar Gourav",
+      position: "Chief",
       description: "PhD in Soil Science, leading our research and development initiatives.",
-      image: "/O3.png"
+      image: "/Chief.png"
     }
   ];
 
@@ -36,8 +36,8 @@ const AboutPage = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <HeroSection
-        title="About Jagat Fertilizer & Chemical"
-        description="For over two decades, we have been at the forefront of agricultural innovation, providing farmers with high-quality fertilizers, chemicals, and expert guidance to maximize crop yields and promote sustainable farming practices."
+        title="About Jagat Fertilizers & Chemicals"
+        description="For over 8+ years, we have been at the forefront of agricultural innovation, providing farmers with high-quality fertilizers, chemicals, and expert guidance to maximize crop yields and promote sustainable farming practices."
         backgroundImage="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
         height="md"
       />
@@ -54,12 +54,12 @@ const AboutPage = () => {
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Founded in 2001, Jagat Fertilizer & Chemical began as a small family business with a simple mission: 
+                Founded in 2001, Jagat Fertilizers & Chemicals began as a small family business with a simple mission: 
                 to help farmers achieve better harvests through quality products and expert knowledge. Today, we serve 
                 thousands of farmers across the region.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Our journey started when our founder, Mr. Jagat Singh, recognized the need for reliable agricultural 
+                Our journey started when our founder, Mr. Rahul Gour, recognized the need for reliable agricultural 
                 supplies in rural areas. With his background in agricultural science and passion for farming, he 
                 established our company to bridge the gap between modern agricultural technology and traditional farming practices.
               </p>
@@ -296,8 +296,7 @@ const AboutPage = () => {
               {[
                 "ISO 9001:2015 Certified",
                 "FIDR Approved",
-                "Agricultural Excellence Award 2023",
-                "Best Agricultural Supplier 2022"
+              
               ].map((certification, index) => (
                 <motion.div
                   key={certification}
