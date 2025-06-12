@@ -80,7 +80,7 @@ const SupportPage = () => {
       icon: <Phone />,
       title: "Phone Support",
       description: "Speak directly with our agricultural experts",
-      contact: "+91 98765 43210",
+      contact: "+91 7900400900",
       availability: "Mon-Sat: 8AM-8PM",
       action: "Call Now"
     },
@@ -88,7 +88,7 @@ const SupportPage = () => {
       icon: <MessageSquare />,
       title: "WhatsApp Support",
       description: "Quick responses and instant assistance",
-      contact: "+91 98765 43210",
+      contact: "+91 7900400900",
       availability: "24/7 Emergency Support",
       action: "Chat Now"
     },
@@ -96,7 +96,7 @@ const SupportPage = () => {
       icon: <Mail />,
       title: "Email Support",
       description: "Detailed responses to complex queries",
-      contact: "support@jagatfertilizer.com",
+      contact: "info.jagatfertilizer@gmail.com",
       availability: "Response within 24 hours",
       action: "Email Us"
     }
@@ -228,7 +228,7 @@ const SupportPage = () => {
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
-                          placeholder="your.email@example.com"
+                          placeholder="info.jagatfertilizer@gmail.com"
                           required
                           className="mt-1"
                         />
@@ -284,21 +284,21 @@ const SupportPage = () => {
                     <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Support</h3>
                     
                     <div className="space-y-3">
-                      <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/7900400900" target="_blank" rel="noopener noreferrer">
                         <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                           <MessageSquare className="mr-2 h-4 w-4" />
                           WhatsApp Support
                         </Button>
                       </a>
                       
-                      <a href="tel:+919876543210">
+                      <a href="tel:+917900400900">
                         <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                           <Phone className="mr-2 h-4 w-4" />
                           Call Support
                         </Button>
                       </a>
                       
-                      <a href="mailto:support@jagatfertilizer.com">
+                      <a href="mailto:info.jagatfertilizer@gmail.com">
                         <Button variant="outline" className="w-full">
                           <Mail className="mr-2 h-4 w-4" />
                           Email Support

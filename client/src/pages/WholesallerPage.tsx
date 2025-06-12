@@ -271,7 +271,7 @@ const WholesallerPage = () => {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange("phone", e.target.value)}
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 7900400900"
                           required
                           className="mt-2"
                         />
@@ -484,7 +484,7 @@ const WholesallerPage = () => {
                     <div className="space-y-3">
                       <div className="flex items-center space-x-3">
                         <Phone className="h-5 w-5 text-primary" />
-                        <span>Wholesaler Hotline: +91 98765 43212</span>
+                        <span>Wholesaler Hotline: +91 7900400900</span>
                       </div>
                       <div className="flex items-center space-x-3">
                         <Mail className="h-5 w-5 text-primary" />
@@ -492,7 +492,7 @@ const WholesallerPage = () => {
                       </div>
                       <div className="flex items-center space-x-3">
                         <MessageSquare className="h-5 w-5 text-primary" />
-                        <span>WhatsApp: +91 98765 43212</span>
+                        <span>WhatsApp: +91 7900400900</span>
                       </div>
                     </div>
                   </CardContent>

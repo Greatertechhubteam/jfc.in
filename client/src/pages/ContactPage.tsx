@@ -52,7 +52,7 @@ const ContactPage = () => {
     {
       icon: <MapPin />,
       title: "Our Address",
-      details: ["Gata No-122, Mohamad Karimpur ", "Urf Dhakar, Khurja Bulandshahar,", "Uttar Pradesh, 203131 India"]
+      details: ["Gata No-122, Mohamad Karimpur, Urf Dhakar ", "Uttar Pradesh, 203131 India"]
     },
     {
       icon: <Phone />,
@@ -264,44 +264,44 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
+<section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div 
+      className="text-center mb-12"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Visit Our Location
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        Find us easily with our convenient location in the heart of the agricultural district
+      </p>
+    </motion.div>
 
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Visit Our Location
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Find us easily with our convenient location in the heart of the agricultural district
-            </p>
-          </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="rounded-xl overflow-hidden shadow-lg"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3514.2109671186086!2d77.83086117548733!3d28.261619175869253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1i1024!2i768!4f13.1!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDE1JzQxLjgiTiA3N8KwNTAnMDAuNCJF!5e0!3m2!1sen!2sin!4v1749715926613!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="w-full h-[450px] rounded-xl border-0"
+      ></iframe>
+    </motion.div>
+  </div>
+</section>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="bg-gray-200 rounded-xl h-96 flex items-center justify-center"
-          >
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600 font-medium mb-2">Interactive Map</p>
-              <p className="text-sm text-gray-500">Google Maps integration would be embedded here</p>
-              
-              <Button className="mt-4 bg-primary hover:bg-primary/90 text-white">
-                Get Directions
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Office Hours */}
       <section className="py-20 bg-white">
