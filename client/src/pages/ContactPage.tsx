@@ -230,7 +230,7 @@ const ContactPage = () => {
                   
                   <div className="space-y-4">
                     <a 
-                      href="https://wa.me/919876543210" 
+                      href="https://wa.me/917900400900" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="block"

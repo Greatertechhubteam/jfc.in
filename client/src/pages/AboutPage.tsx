@@ -278,25 +278,28 @@ const AboutPage = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Certifications & Awards
-            </h2>
-            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-              Recognition of our commitment to quality and excellence
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+ 
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Certifications & Awards
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+            Recognition of our commitment to quality and excellence
+          </p>
+
+          {/* Centered Grid Wrapper */}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {[
                 "ISO 9001:2015 Certified",
                 "FIDR Approved",
-              
               ].map((certification, index) => (
                 <motion.div
                   key={certification}
@@ -304,16 +307,20 @@ const AboutPage = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="p-6 bg-gray-50 rounded-lg"
+                  className="p-6 bg-gray-50 rounded-lg text-center"
                 >
                   <Award className="h-12 w-12 text-primary mx-auto mb-4" />
                   <p className="font-medium text-gray-900">{certification}</p>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-        </div>
-      </section>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+
+
+
     </div>
   );
 };
