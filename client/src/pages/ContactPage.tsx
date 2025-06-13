@@ -77,7 +77,7 @@ const ContactPage = () => {
       <HeroSection
         title="Contact Us"
         description="Get in touch with our agricultural experts. We're here to help you with all your farming needs and provide personalized solutions for your agricultural challenges."
-        backgroundImage="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+        backgroundImage="/hero3.png"
         height="md"
       />
 

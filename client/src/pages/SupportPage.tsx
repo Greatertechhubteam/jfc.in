@@ -108,7 +108,7 @@ const SupportPage = () => {
       <HeroSection
         title="Support Center"
         description="Find answers to common questions or submit a support ticket. Our team is dedicated to providing you with the best agricultural support and guidance."
-        backgroundImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+        backgroundImage="/hero5.png"
         height="md"
       />
 

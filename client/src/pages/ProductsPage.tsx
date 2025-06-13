@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import HeroSection from "@/components/ui/hero-section";
 import ProductCard from "@/components/ui/product-card";
@@ -13,7 +12,7 @@ const ProductsPage = () => {
 
   const categories = [
     { id: "all", name: "All Products" },
-    { id: "fertilizers", name: "Fertilizers" },
+   
     { id: "chemicals", name: "Chemicals" },
     { id: "seeds", name: "Seeds" },
     { id: "equipment", name: "Equipment" },
@@ -24,74 +23,74 @@ const ProductsPage = () => {
     {
       name: "Soil Power",
       image: "/products/P1.svg",
-      // category: "fertilizers",
+      category: "fertilizers",
       description: "Balanced fertilizer for all crop stages.",
-      // price: "$20",
-      // tags: ["fertilizer", "npk", "complex"],
+      price: "$20",
+      tags: ["fertilizer", "npk", "complex"],
     },
     {
       name: "MahaBalwan",
       image: "/products/P2.svg",
-      // category: "organic",
+      category: "organic",
       description: "Eco-friendly compost for soil enrichment.",
-      // price: "$15",
-      // tags: ["organic", "vermicompost"],
+      price: "$15",
+      tags: ["organic", "vermicompost"],
     },
     {
       name: "MahaBalwan Aloo Special",
       image: "/products/P3.svg",
-      // category: "chemicals",
+      category: "chemicals",
       description: "Effective pesticide for insect control.",
-      // price: "$30",
-      // tags: ["pesticide", "chlorpyrifos"],
+      price: "$30",
+      tags: ["pesticide", "chlorpyrifos"],
     },
     {
       name: "Ferrate Sulphate",
       image: "/products/P4.svg",
-      // category: "seeds",
+      category: "seeds",
       description: "High-yield hybrid tomato seeds.",
-      // price: "$10",
-      // tags: ["seeds", "tomato", "hybrid"],
+      price: "$10",
+      tags: ["seeds", "tomato", "hybrid"],
     },
     {
       name: "Urea 46% N",
       image: "/products/urea.jpg",
-      // category: "fertilizers",
+      category: "fertilizers",
       description: "Nitrogen-rich fertilizer for fast growth.",
-      // price: "$25",
-      // tags: ["urea", "nitrogen", "fertilizer"],
+      price: "$25",
+      tags: ["urea", "nitrogen", "fertilizer"],
     },
     {
       name: "Power Sprayer",
       image: "/products/sprayer.jpg",
-      // category: "equipment",
+      category: "equipment",
       description: "Efficient equipment for spraying crops.",
-      // price: "$120",
-      // tags: ["equipment", "sprayer"],
+      price: "$120",
+      tags: ["equipment", "sprayer"],
     },
     {
       name: "Glyphosate 41% SL",
       image: "/products/glyphosate.jpg",
-      // category: "chemicals",
+      category: "chemicals",
       description: "Non-selective herbicide for weed control.",
-      // price: "$35",
-      // tags: ["glyphosate", "herbicide"],
+      price: "$35",
+      tags: ["glyphosate", "herbicide"],
     },
     {
       name: "DAP Fertilizer",
       image: "/products/dap.jpg",
-      // category: "fertilizers",
+      category: "fertilizers",
       description: "Phosphorus and nitrogen rich fertilizer.",
-      // price: "$22",
-      // tags: ["dap", "fertilizer"],
+      price: "$22",
+      tags: ["dap", "fertilizer"],
     },
     {
       name: "Organic Neem Cake",
       image: "/products/neem-cake.jpg",
-      // category: "organic",
+      category: "organic",
       description: "Natural fertilizer and pest repellent.",
-      // price: "$18",
-      // tags: ["neem", "organic", "cake"],
+      price: "$18",
+      tags: ["neem", "organic", "cake"],
     },
   ];
 
@@ -110,7 +109,7 @@ const ProductsPage = () => {
       <HeroSection
         title="Our Products"
         description="Discover our comprehensive range of premium fertilizers, chemicals, and agricultural solutions."
-        backgroundImage="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+        backgroundImage="/hero4.png"
         height="md"
       />
 
@@ -172,14 +171,15 @@ const ProductsPage = () => {
           {filteredProducts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {filteredProducts.map((product, index) => (
+                // To change "View Details" to "Contact Us", open the ProductCard component
+                // (likely in src/components/ui/product-card.js) and replace the button/link text
+                // from "View Details" to "Contact Us". For example, change <Button>View Details</Button>
+                // to <Button>Contact Us</Button>.
                 <ProductCard
                   key={product.name}
                   name={product.name}
                   description={product.description}
-                  price={product.price}
                   image={product.image}
-                  category={product.category}
-                  tags={product.tags}
                   index={index}
                 />
               ))}
@@ -194,10 +194,12 @@ const ProductsPage = () => {
               <div className="text-gray-400 text-6xl mb-4">📦</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">No products found</h3>
               <p className="text-gray-600 mb-4">Try adjusting your search or filter criteria</p>
-              <Button onClick={() => {
-                setSearchTerm("");
-                setActiveCategory("all");
-              }}>
+              <Button
+                onClick={() => {
+                  setSearchTerm("");
+                  setActiveCategory("all");
+                }}
+              >
                 Clear Filters
               </Button>
             </motion.div>
@@ -221,10 +223,18 @@ const ProductsPage = () => {
               Our agricultural experts are here to help you select the right products for your specific crop and soil conditions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="bg-white text-primary hover:bg-gray-100"
+              >
                 Get Expert Consultation
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-primary">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-black hover:bg-white hover:text-primary"
+              >
                 Download Product Catalog
               </Button>
             </div>

@@ -6,6 +6,8 @@ interface HeroSectionProps {
   subtitle?: string;
   description?: string;
   backgroundImage?: string;
+  backgroundVideo?: string;
+  backgroundType?: "image" | "video"; // NEW
   children?: ReactNode;
   height?: "sm" | "md" | "lg" | "xl";
 }
@@ -15,6 +17,8 @@ const HeroSection = ({
   subtitle,
   description,
   backgroundImage,
+  backgroundVideo,
+  backgroundType = "image", // default to image
   children,
   height = "lg"
 }: HeroSectionProps) => {
@@ -27,21 +31,38 @@ const HeroSection = ({
 
   return (
     <section className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
-      {/* Background Image */}
-      {backgroundImage && (
+      
+      {/* ✅ Background Video */}
+      {backgroundType === "video" && backgroundVideo && (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
+
+      {/* ✅ Background Image */}
+      {backgroundType === "image" && backgroundImage && (
         <div className="absolute inset-0 z-0">
           <img 
             src={backgroundImage} 
             alt="Background" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover" 
           />
-          <div className="absolute inset-0 bg-black/50"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
         </div>
       )}
-      
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-28 md:pt-32" >
+
+      {/* ✅ Shared Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent z-0"></div>
+
+      {/* ✅ Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-28 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -5,12 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/ui/hero-section";
 import FeatureCard from "@/components/ui/feature-card";
 import ProductCard from "@/components/ui/product-card";
-import { 
-  Award, 
-  Truck, 
-  Users, 
-  DollarSign, 
-  Leaf, 
+import {
+  Award,
+  Truck,
+  Users,
+  DollarSign,
+  Leaf,
   Phone,
   ArrowRight,
   Star
@@ -67,14 +67,36 @@ const HomePage = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      name: "Ram Singh",
+      role: "Organic Farmer",
+      feedback:
+        "Jagat Fertilizers has transformed my farm's productivity. Their soil testing service and custom fertilizer recommendations increased my yield by 30%."
+    },
+    {
+      name: "Sita Devi",
+      role: "Wheat Producer",
+      feedback:
+        "Reliable delivery and expert advice. My wheat output improved significantly over the last season."
+    },
+    {
+      name: "Mohan Lal",
+      role: "Vegetable Grower",
+      feedback:
+        "I’ve been using their organic compost for a year now — the crop quality and soil health have greatly improved."
+    }
+  ];
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <HeroSection
         title="Premium Agricultural Solutions"
         subtitle="Growing Success Together"
-        description="Leading provider of high-quality Fertilizers, & Chemicals, and comprehensive agricultural services. Empowering farmers with expert consultancy and innovative solutions for sustainable growth."
-        backgroundImage="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&h=1380"
+        description="Empowering farmers with innovative agricultural consultancy and products."
+        backgroundVideo="/hero.mp4" 
+        backgroundType="video"
         height="xl"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -85,9 +107,9 @@ const HomePage = () => {
             </Button>
           </Link>
           <Link href="/contact">
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="border-2 border-white text-black hover:bg-primary/90 hover:text-white px-8 py-4 text-lg font-semibold"
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -100,7 +122,7 @@ const HomePage = () => {
       {/* Features Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -150,7 +172,7 @@ const HomePage = () => {
                 We specialize in providing comprehensive agricultural solutions including premium Fertilizers, 
                 crop protection & Chemicals, soil testing services, and professional agro consultancy.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">8+</div>
@@ -185,7 +207,7 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=800" 
+                src="/about.png" 
                 alt="Agricultural facility" 
                 className="rounded-xl shadow-lg w-full"
               />
@@ -197,7 +219,7 @@ const HomePage = () => {
       {/* Featured Products */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -220,14 +242,11 @@ const HomePage = () => {
                 description={product.description}
                 price={product.price}
                 image={product.image}
-                category={product.category}
-                tags={product.tags}
-                index={index}
               />
             ))}
           </div>
 
-          <motion.div 
+          <motion.div
             className="text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -247,7 +266,7 @@ const HomePage = () => {
       {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -263,7 +282,7 @@ const HomePage = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((_, index) => (
+            {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -279,13 +298,12 @@ const HomePage = () => {
                       ))}
                     </div>
                     <p className="text-gray-600 mb-4 italic">
-                      "Jagat Fertilizerss has transformed my farm's productivity. Their soil testing service and custom Fertilizerss recommendations increased my yield by 30%."
+                      "{testimonial.feedback}"
                     </p>
                     <div className="flex items-center">
-                      {/* <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div> */}
                       <div>
-                        <h4 className="font-semibold text-gray-900">Ram {index + 1}</h4>
-                        <p className="text-gray-500 text-sm">Agricultural Customer</p>
+                        <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                        <p className="text-gray-500 text-sm">{testimonial.role}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -320,9 +338,9 @@ const HomePage = () => {
                 </Button>
               </Link>
               <a href="https://wa.me/7900400900" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  size="lg"
+                  variant="outline"
                   className="border-2 border-white text-primary hover:bg-white hover:text-primary px-8 py-4"
                 >
                   WhatsApp Us

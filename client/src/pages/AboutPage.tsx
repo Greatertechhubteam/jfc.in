@@ -38,7 +38,7 @@ const AboutPage = () => {
       <HeroSection
         title="About Jagat Fertilizers & Chemicals"
         description="For over 8+ years, we have been at the forefront of agricultural innovation, providing farmers with high-quality fertilizers, chemicals, and expert guidance to maximize crop yields and promote sustainable farming practices."
-        backgroundImage="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600"
+        backgroundImage="/hero2.png"
         height="md"
       />
 
@@ -86,7 +86,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="about2.png" 
                 alt="Agricultural warehouse" 
                 className="rounded-xl shadow-lg w-full"
               />

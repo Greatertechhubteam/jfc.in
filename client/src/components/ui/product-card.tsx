@@ -66,7 +66,7 @@ const ProductCard = ({
               size="sm" 
               className="bg-primary hover:bg-primary/90 text-white"
             >
-              View Details
+             <a href="/contact"> Contact</a>
             </Button>
           </div>
         </CardContent>
