@@ -42,28 +42,28 @@ const HomePage = () => {
 
   const featuredProducts = [
     {
-      name: "NPK Complex Fertilizers",
+      name: "Cal-Star",
       description: "Balanced nutrition for optimal crop growth and development",
-      price: "₹850/bag",
-      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-      category: "Fertilizerss",
+      // price: "₹850/bag",
+      image: "products/Calstar2.png",
+      // category: "Fertilizerss",
       tags: ["NPK", "Balanced", "High Quality"]
     },
     {
-      name: "Organic Compost",
+      name: "American Wonder",
       description: "Natural organic Fertilizers for sustainable farming practices",
-      price: "₹650/bag",
-      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-      category: "Organic",
+      // price: "₹650/bag",
+      image: "products/American.png",
+      // category: "Organic",
       tags: ["Organic", "Eco-friendly", "Natural"]
     },
     {
       name: "Crop Protection Spray",
       description: "Effective pest and disease control solution",
-      price: "₹450/L",
-      image: "https://images.unsplash.com/photo-1560582861-45078880e48e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
-      category: "& Chemicalss",
-      tags: ["Pesticide", "Protection", "Effective"]
+      // price: "₹450/L",
+      image: "products/Super.png",
+      // category: "& Chemicalss",
+      // tags: ["Pesticide", "Protection", "Effective"]
     }
   ];
 

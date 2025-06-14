@@ -13,14 +13,14 @@ interface ProductCardProps {
   index?: number;
 }
 
-const ProductCard = ({ 
-  name, 
-  description, 
-  price, 
-  image, 
-  category, 
+const ProductCard = ({
+  name,
+  description,
+  price,
+  image,
+  category,
   tags = [],
-  index = 0 
+  index = 0,
 }: ProductCardProps) => {
   return (
     <motion.div
@@ -31,12 +31,12 @@ const ProductCard = ({
       whileHover={{ y: -5 }}
       className="group"
     >
-      <Card className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0">
+      <Card className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 rounded-2xl">
         <div className="relative overflow-hidden">
-          <img 
-            src={image} 
+          <img
+            src={image}
             alt={name}
-            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-24 sm:h-28 md:h-32 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute top-4 left-4">
             <Badge variant="secondary" className="bg-primary text-white">
@@ -44,12 +44,15 @@ const ProductCard = ({
             </Badge>
           </div>
         </div>
+
         <CardContent className="p-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-2">{description}</p>
-          
+          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+            {description}
+          </p>
+
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4">
               {tags.map((tag) => (
@@ -59,14 +62,14 @@ const ProductCard = ({
               ))}
             </div>
           )}
-          
+
           <div className="flex items-center justify-between">
             <span className="text-primary font-bold text-lg">{price}</span>
-            <Button 
-              size="sm" 
+            <Button
+              size="sm"
               className="bg-primary hover:bg-primary/90 text-white"
             >
-             <a href="/contact"> Contact</a>
+              <a href="/contact">Contact</a>
             </Button>
           </div>
         </CardContent>
