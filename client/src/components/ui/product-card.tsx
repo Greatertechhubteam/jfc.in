@@ -15,7 +15,6 @@ interface ProductCardProps {
 
 const ProductCard = ({
   name,
-  description,
   price,
   image,
   category,
@@ -36,12 +35,12 @@ const ProductCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-24 sm:h-28 md:h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-10 sm:h-10 md:h-[20rem]	 object-cover group-hover:scale-105 transition-transform duration-300"
           />
-          <div className="absolute top-4 left-4">
-            <Badge variant="secondary" className="bg-primary text-white">
+          <div className="absolute top-4 right-4">
+            {/* <Badge variant="secondary" className="bg-primary text-white">
               {category}
-            </Badge>
+            </Badge> */}
           </div>
         </div>
 
@@ -49,9 +48,7 @@ const ProductCard = ({
           <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-            {description}
-          </p>
+
 
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4">
@@ -63,15 +60,16 @@ const ProductCard = ({
             </div>
           )}
 
-          <div className="flex items-center justify-between">
-            <span className="text-primary font-bold text-lg">{price}</span>
-            <Button
-              size="sm"
-              className="bg-primary hover:bg-primary/90 text-white"
-            >
-              <a href="/contact">Contact</a>
-            </Button>
-          </div>
+      <div className="flex items-center justify-between">
+  <Button
+    size="sm"
+    className="bg-primary hover:bg-primary/90 text-white"
+  >
+    <a href="/contact">Contact</a>
+  </Button>
+  <span className="text-primary font-bold text-lg">{price}</span>
+</div>
+
         </CardContent>
       </Card>
     </motion.div>

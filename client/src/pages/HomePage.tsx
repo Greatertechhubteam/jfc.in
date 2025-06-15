@@ -239,7 +239,7 @@ const HomePage = () => {
               <ProductCard
                 key={product.name}
                 name={product.name}
-                description={product.description}
+                // description={product.description}
                 price={product.price}
                 image={product.image}
               />
