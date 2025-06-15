@@ -123,6 +123,32 @@ const ProductsPage = () => {
       price: "$18",
       tags: ["neem", "organic", "cake"],
     },
+      {
+      name: "Zoom",
+      image: "/products/Zoom.png",
+      category: "organic",
+      // description: "Natural fertilizer and pest repellent.",
+      price: "$18",
+      tags: ["neem", "organic", "cake"],
+    },
+    
+      {
+      name: "Ajooba",
+      image: "/products/Ajooba.png",
+      category: "organic",
+      // description: "Natural fertilizer and pest repellent.",
+      price: "$18",
+      tags: ["neem", "organic", "cake"],
+    },
+    ,
+      {
+      name: "Re-Life",
+      image: "/products/ReLife.png",
+      category: "organic",
+      // description: "Natural fertilizer and pest repellent.",
+      price: "$18",
+      tags: ["neem", "organic", "cake"],
+    },
   ];
 
   const filteredProducts = products.filter((product) => {
