@@ -5,10 +5,10 @@ import { Badge } from "@/components/ui/badge";
 
 interface ProductCardProps {
   name: string;
-  description: string;
-  price: string;
+  description?: string;
+  price?: string;
   image: string;
-  category: string;
+  category?: string;
   tags?: string[];
   index?: number;
 }
@@ -17,9 +17,10 @@ const ProductCard = ({
   name,
   price,
   image,
-  category,
   tags = [],
   index = 0,
+  category,
+  description,
 }: ProductCardProps) => {
   return (
     <motion.div
@@ -35,13 +36,15 @@ const ProductCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-10 sm:h-10 md:h-[20rem]	 object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-10 sm:h-10 md:h-[20rem] object-cover group-hover:scale-105 transition-transform duration-300"
           />
-          <div className="absolute top-4 right-4">
-            {/* <Badge variant="secondary" className="bg-primary text-white">
-              {category}
-            </Badge> */}
-          </div>
+          {category && (
+            <div className="absolute top-4 right-4">
+              <Badge variant="secondary" className="bg-primary text-white">
+                {category}
+              </Badge>
+            </div>
+          )}
         </div>
 
         <CardContent className="p-6">
@@ -49,6 +52,11 @@ const ProductCard = ({
             {name}
           </h3>
 
+          {description && (
+            <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+              {description}
+            </p>
+          )}
 
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4">
@@ -60,16 +68,17 @@ const ProductCard = ({
             </div>
           )}
 
-      <div className="flex items-center justify-between">
-  <Button
-    size="sm"
-    className="bg-primary hover:bg-primary/90 text-white"
-  >
-    <a href="/contact">Contact</a>
-  </Button>
-  <span className="text-primary font-bold text-lg">{price}</span>
-</div>
-
+          <div className="flex items-center justify-between">
+            <Button
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-white"
+            >
+              <a href="/contact">Contact</a>
+            </Button>
+            {price && (
+              <span className="text-primary font-bold text-lg">{price}</span>
+            )}
+          </div>
         </CardContent>
       </Card>
     </motion.div>
